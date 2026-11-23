@@ -1,0 +1,25 @@
+# Curated GitHub package; keep the original analysis files locally.
+/*
+!/README.md
+!/.gitignore
+!/docs/
+!/tables/
+!/figures/
+
+/tables/*
+!/tables/rmsd_summary.csv
+!/tables/domain_distance_summary.csv
+!/tables/domain_angle_summary.csv
+!/tables/rg_summary.csv
+!/tables/water_bridge_summary.csv
+!/tables/dccm_network_summary.csv
+!/tables/pca_explained_variance.csv
+
+/figures/*
+!/figures/fig01e_rmsd_all_grid.png
+!/figures/fig03d_domain_distances_grid.png
+!/figures/fig04c_pmf_all_grid.png
+!/figures/fig11_jsd_heatmap.png
+!/figures/fig24c_lid_nmp_coupling_bar.png
+!/figures/fig25b_domain_angle_distributions.png
+!/figures/fig26d_bridge_summary_bar.png
