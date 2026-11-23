@@ -1,6 +1,7 @@
 # Curated GitHub package; keep the original analysis files locally.
 /*
 !/README.md
+!/water_model.gif
 !/requirements.txt
 !/.gitignore
 !/docs/
@@ -13,5 +14,6 @@
 /data/*
 !/data/README.md
 !/data/domain_distances.csv
+!/data/readme_inputs/
 
 # All summary tables and all historical figures are kept for the atlas.

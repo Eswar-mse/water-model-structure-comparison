@@ -2,6 +2,8 @@
 
 The original results folder contains **86 figures**. This page places every figure in the scientific argument. The [README](../README.md) presents the shorter story; this atlas preserves the full exploratory record. The original figure numbering is retained, including reused numbers and letter suffixes.
 
+The README displays [dark renditions](../figures/dark/) of its featured analyses to match the project banner. The historical figures linked below remain unaltered. The dark plots and their [source outputs](../data/readme_inputs/) can be regenerated with [`plot_readme_dark.py`](../scripts/plot_readme_dark.py).
+
 **Reading labels:** **Core** = directly supports the main descriptive story; **Context** = adds a complementary readout; **Exploratory** = method or uncertainty needs review; **Hold** = a visible analysis issue prevents a physical or statistical claim. These labels describe the present evidence, not the effort behind the analysis.
 
 ## 1 · What moves, and when? — Core
