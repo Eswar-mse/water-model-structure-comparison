@@ -1,8 +1,12 @@
 # Water-model and starting-structure effects on 4AKE dynamics
 
+![4AKE in water: eight trajectories and mean NMP domain opening](assets/story-cover.svg)
+
 **A visual analysis of eight 300 ns molecular-dynamics trajectories of adenylate kinase (4AKE).** Four explicit-water models (OPC, SPC/E, TIP3P and TIP4P) were each run from a crystal-derived and a predicted starting structure. The identity of the predicted structure and the simulation setup still need confirmation.
 
-> **Status:** Results archive and paper-story draft. The figures describe these trajectories; they do not yet establish a general ranking of water models. Simulation input files, analysis scripts and independent replicate information are not present in this folder.
+> **Status:** Figure-led results story. The figures describe these trajectories; they do not yet establish a general ranking of water models. Simulation input files, analysis scripts and independent replicate information are not present in this folder.
+
+**Explore:** [Domain motion](#2-the-solvent-and-starting-structure-jointly-shape-domain-opening) · [Conformational landscapes](#3-the-sampled-conformational-landscapes-differ) · [Hydration context](#4-solvent-facing-readouts-suggest-possible-mechanisms) · [Evidence and limits](docs/EVIDENCE_AND_LIMITS.md)
 
 ## The question
 
@@ -62,4 +66,4 @@ The strongest defensible conclusion is that **water model and initial structure 
 
 ## Publication status
 
-This is a GitHub-ready results narrative. A preprint should wait for the simulation protocol, predicted-structure provenance, trajectory/replicate accounting, and checks of statistical uncertainty and water-diffusion analysis. See the [preprint draft](docs/PREPRINT_DRAFT.md) and [methods checklist](docs/METHODS_TO_RECOVER.md).
+The visual story stands on its own. If we later pursue a preprint, it should wait for the simulation protocol, predicted-structure provenance, trajectory/replicate accounting, and checks of statistical uncertainty and water-diffusion analysis. See the optional [preprint draft](docs/PREPRINT_DRAFT.md) and [methods checklist](docs/METHODS_TO_RECOVER.md).
