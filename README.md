@@ -2,11 +2,11 @@
 
 ![4AKE in water: eight trajectories and mean NMP domain opening](assets/story-cover.svg)
 
-**A visual analysis of eight 300 ns molecular-dynamics trajectories of adenylate kinase (4AKE).** Four explicit-water models (OPC, SPC/E, TIP3P and TIP4P) were each run from a crystal-derived and a predicted starting structure. The identity of the predicted structure and the simulation setup still need confirmation.
+**A visual analysis of eight 300 ns molecular-dynamics trajectories of adenylate kinase (4AKE).** Four explicit-water models (OPC, SPC/E, TIP3P and TIP4P) were each run from a crystal-derived and a predicted starting structure. The identity of the predicted structure and the simulation setup still need confirmation. The [complete figure atlas](docs/FIGURE_ATLAS.md) covers all **86 historical figures** plus a new reproducible comparison plot.
 
-> **Status:** Figure-led results story. The figures describe these trajectories; they do not yet establish a general ranking of water models. Simulation input files, analysis scripts and independent replicate information are not present in this folder.
+> **Status:** Figure-led results story and complete visual archive. The figures describe these trajectories; they do not yet establish a general ranking of water models. Simulation input files, original analysis scripts and independent replicate information are not present in this folder.
 
-**Explore:** [Domain motion](#2-the-solvent-and-starting-structure-jointly-shape-domain-opening) · [Conformational landscapes](#3-the-sampled-conformational-landscapes-differ) · [Hydration context](#4-hydration-and-correlated-motion) · [Evidence and limits](docs/EVIDENCE_AND_LIMITS.md)
+**Explore:** [Domain motion](#2-the-solvent-and-starting-structure-jointly-shape-domain-opening) · [Conformational landscapes](#3-the-sampled-conformational-landscapes-differ) · [Hydration context](#4-hydration-and-correlated-motion) · [Full figure atlas](docs/FIGURE_ATLAS.md) · [Evidence and limits](docs/EVIDENCE_AND_LIMITS.md)
 
 ## The question
 
@@ -20,7 +20,7 @@ The predicted-start trajectories begin with larger deviations from the open refe
 
 ![Backbone and domain RMSD across eight conditions](figures/fig01e_rmsd_all_grid.png)
 
-**Figure 1.** Backbone, LID, NMP and core RMSD relative to the open reference. Columns are water models; green is crystal start and orange is predicted start. Source: [`tables/rmsd_summary.csv`](tables/rmsd_summary.csv) and the underlying time series, which are retained locally but omitted from the compact GitHub package.
+**Figure 1.** Backbone, LID, NMP and core RMSD relative to the open reference. Columns are water models; green is crystal start and orange is predicted start. Summary: [`tables/rmsd_summary.csv`](tables/rmsd_summary.csv). The underlying time series remain in the original local results archive.
 
 ### 2. The solvent and starting structure jointly shape domain opening
 
@@ -52,17 +52,30 @@ Water-bridge counts and domain-motion correlations vary by condition. They provi
 
 **Figures 5–6.** Mean bridge-water counts and off-diagonal LID/NMP dynamic cross-correlation. Summaries: [`water_bridge_summary.csv`](tables/water_bridge_summary.csv), [`dccm_network_summary.csv`](tables/dccm_network_summary.csv). Definitions and cutoffs must be recovered before manuscript use.
 
+## Explore the other analyses
+
+The central story uses six figures for a readable path through the results. The full project also measured local flexibility, protein size and exposure, collective coordinates, and residue-level motion. These views provide useful context; the [complete atlas](docs/FIGURE_ATLAS.md) links and explains every historical figure.
+
+| Local flexibility | Global exposure |
+| --- | --- |
+| [![RMSF across all conditions](figures/fig02c_rmsf_all_grid.png)](figures/fig02c_rmsf_all_grid.png) **RMSF:** where the chain is flexible. | [![SASA across all conditions](figures/fig08e_sasa_grid.png)](figures/fig08e_sasa_grid.png) **SASA and Rg:** how exposure and compactness change. |
+| Collective coordinates | Correlated motion |
+| [![PCA landscape grid](figures/fig06e_fel_grid.png)](figures/fig06e_fel_grid.png) **PCA:** another view of conformational separation; free-energy interpretation needs validation. | [![DCCM grid](figures/fig07i_dccm_grid.png)](figures/fig07i_dccm_grid.png) **DCCM:** which residue motions are correlated. |
+
+The atlas also covers hydration RDF and contact traces, residue hydration, JSD and convergence, tICA/MSM/TPT, hydrogen-bond lifetimes, water diffusion, and the original composite scorecard. It marks the last three analysis families where their current outputs fail basic interpretation checks.
+
 ## What this dataset supports
 
 The strongest defensible conclusion is that **the sampled 4AKE domain motions vary across combinations of water model and starting structure**. Differences are visible across distance traces, angle distributions and condition-matched occupancy maps. The available trajectories alone cannot separate a reproducible water-model effect from run-to-run variation or initial-condition memory.
 
 ## Repository map
 
-- [`docs/EVIDENCE_AND_LIMITS.md`](docs/EVIDENCE_AND_LIMITS.md): claim-by-claim evidence, figure selection, and known analysis issues.
+- [`docs/FIGURE_ATLAS.md`](docs/FIGURE_ATLAS.md): guided index to all 86 original figures, grouped by scientific question and interpretation status.
+- [`docs/EVIDENCE_AND_LIMITS.md`](docs/EVIDENCE_AND_LIMITS.md): claim-by-claim evidence and known analysis issues.
 - [`docs/PREPRINT_DRAFT.md`](docs/PREPRINT_DRAFT.md): provisional title, abstract and manuscript outline.
 - [`docs/METHODS_TO_RECOVER.md`](docs/METHODS_TO_RECOVER.md): exact information needed for a reproducible preprint.
-- [`figures/`](figures/): selected visual-story panels. The local results folder contains additional exploratory figures.
-- [`tables/`](tables/): compact summary tables for the displayed comparisons.
+- [`figures/`](figures/): all historical panels, plus the new matched-axis occupancy map.
+- [`tables/`](tables/): all original compact summary tables; see the atlas before interpreting flagged outputs.
 - [`data/domain_distances.csv`](data/domain_distances.csv) and [`scripts/plot_domain_landscapes.py`](scripts/plot_domain_landscapes.py): data and code for the featured occupancy map.
 
 ## Publication status

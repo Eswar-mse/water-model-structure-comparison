@@ -1,10 +1,12 @@
 # Evidence and limits
 
+For every historical panel, see the [complete figure atlas](FIGURE_ATLAS.md). This document focuses on the central claims and known issues.
+
 ## Design visible in the results
 
 The audit lists eight protein trajectories: OPC, SPC/E, TIP3P and TIP4P, each with CRYSTAL and PREDICTED starts. Each time series runs from 0 to 300 ns at 0.01 ns spacing (30,001 frames per condition). The source paths point to a different machine; trajectories and topology files are absent from this folder. The crystal input is identified by the project owner as PDB **4AKE**. The predicted input is not identified here.
 
-## Recommended main figures
+## Main and supporting figures
 
 | Story step | Figure | What it shows | Interpretation limit |
 | --- | --- | --- | --- |
@@ -12,7 +14,7 @@ The audit lists eight protein trajectories: OPC, SPC/E, TIP3P and TIP4P, each wi
 | Domain movement | `fig03d_domain_distances_grid.png` | LID/core and NMP/core time series | One trajectory may not be representative |
 | Opening geometry | `fig25b_domain_angle_distributions.png` | Condition-dependent angle distributions | Angle atom selections need documentation |
 | Conformational landscape | `domain_landscapes.png` | Occupied LID/NMP coordinate regions on matched axes | Counts frames; finite sampling and early relaxation matter |
-| Exploratory distribution comparison | `fig11_jsd_heatmap.png` | Pairwise domain-coordinate JSD | Histogram/binning and frame dependence matter |
+| Exploratory distribution comparison | `fig11_jsd_heatmap.png` | Pairwise domain-coordinate JSD | Histogram/binning and frame dependence matter; shown in the atlas |
 | Hydration context | `fig26d_bridge_summary_bar.png` | Inter-domain bridge-water counts | Bridge definition needs documentation |
 | Motion coupling | `fig24c_lid_nmp_coupling_bar.png` | LID/NMP DCCM block averages | Correlation is not causal coupling |
 

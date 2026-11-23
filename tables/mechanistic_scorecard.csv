@@ -1,0 +1,89 @@
+water_model,metric,raw_value,direction,normalised
+OPC,"JSD: CRYSTAL vs PREDICTED
+(lower = more similar ensembles)",0.8835,lower_better,0.0
+SPCE,"JSD: CRYSTAL vs PREDICTED
+(lower = more similar ensembles)",0.6602,lower_better,0.4227
+TIP3P,"JSD: CRYSTAL vs PREDICTED
+(lower = more similar ensembles)",0.3554,lower_better,1.0
+TIP4P,"JSD: CRYSTAL vs PREDICTED
+(lower = more similar ensembles)",0.8792,lower_better,0.0081
+OPC,"LID-CORE spread (σ Å)
+(higher = richer sampling)",2.2838,higher_better,0.3503
+SPCE,"LID-CORE spread (σ Å)
+(higher = richer sampling)",2.8343,higher_better,1.0
+TIP3P,"LID-CORE spread (σ Å)
+(higher = richer sampling)",1.987,higher_better,0.0
+TIP4P,"LID-CORE spread (σ Å)
+(higher = richer sampling)",2.1949,higher_better,0.2453
+OPC,"NMP-CORE spread (σ Å)
+(higher = richer sampling)",4.4832,higher_better,0.255
+SPCE,"NMP-CORE spread (σ Å)
+(higher = richer sampling)",5.864,higher_better,1.0
+TIP3P,"NMP-CORE spread (σ Å)
+(higher = richer sampling)",4.0105,higher_better,0.0
+TIP4P,"NMP-CORE spread (σ Å)
+(higher = richer sampling)",4.4829,higher_better,0.2549
+OPC,"RMSD convergence (Å)
+(lower = better converged)",1.295,lower_better,0.549
+SPCE,"RMSD convergence (Å)
+(lower = better converged)",1.698,lower_better,0.0
+TIP3P,"RMSD convergence (Å)
+(lower = better converged)",0.964,lower_better,1.0
+TIP4P,"RMSD convergence (Å)
+(lower = better converged)",1.112,lower_better,0.7984
+OPC,"Rg spread (σ Å)
+(higher = open conformations sampled)",0.775,higher_better,0.7717
+SPCE,"Rg spread (σ Å)
+(higher = open conformations sampled)",0.8352,higher_better,1.0
+TIP3P,"Rg spread (σ Å)
+(higher = open conformations sampled)",0.5715,higher_better,0.0
+TIP4P,"Rg spread (σ Å)
+(higher = open conformations sampled)",0.695,higher_better,0.4683
+OPC,"LID SASA mean (Å²)
+(higher = more open LID)",2888.773,higher_better,1.0
+SPCE,"LID SASA mean (Å²)
+(higher = more open LID)",2827.4118,higher_better,0.0
+TIP3P,"LID SASA mean (Å²)
+(higher = more open LID)",2852.2483,higher_better,0.4048
+TIP4P,"LID SASA mean (Å²)
+(higher = more open LID)",2853.707,higher_better,0.4285
+OPC,"H-bond lifetime τ (ns)
+(longer = more structured solvation)",2.0,higher_better,0.5
+SPCE,"H-bond lifetime τ (ns)
+(longer = more structured solvation)",2.0,higher_better,0.5
+TIP3P,"H-bond lifetime τ (ns)
+(longer = more structured solvation)",2.0,higher_better,0.5
+TIP4P,"H-bond lifetime τ (ns)
+(longer = more structured solvation)",2.0,higher_better,0.5
+OPC,"Water diffusion D (Å² ps⁻¹)
+(lower = slower hydration shell)",-0.0188,lower_better,0.0
+SPCE,"Water diffusion D (Å² ps⁻¹)
+(lower = slower hydration shell)",-0.0475,lower_better,0.3331
+TIP3P,"Water diffusion D (Å² ps⁻¹)
+(lower = slower hydration shell)",-0.1049,lower_better,1.0
+TIP4P,"Water diffusion D (Å² ps⁻¹)
+(lower = slower hydration shell)",-0.0294,lower_better,0.1228
+OPC,"MSM ITS-1 (ns)
+(longer = slower rare events)",7.7594,higher_better,1.0
+SPCE,"MSM ITS-1 (ns)
+(longer = slower rare events)",7.3045,higher_better,0.9197
+TIP3P,"MSM ITS-1 (ns)
+(longer = slower rare events)",2.0923,higher_better,0.0
+TIP4P,"MSM ITS-1 (ns)
+(longer = slower rare events)",4.8006,higher_better,0.4779
+OPC,"VAMP-2 score
+(higher = more slow-process variance)",,higher_better,0.5
+SPCE,"VAMP-2 score
+(higher = more slow-process variance)",,higher_better,0.5
+TIP3P,"VAMP-2 score
+(higher = more slow-process variance)",,higher_better,0.5
+TIP4P,"VAMP-2 score
+(higher = more slow-process variance)",,higher_better,0.5
+OPC,"Allosteric path length
+(shorter = stronger coupling)",0.5528,lower_better,0.7895
+SPCE,"Allosteric path length
+(shorter = stronger coupling)",0.339,lower_better,1.0
+TIP3P,"Allosteric path length
+(shorter = stronger coupling)",1.3545,lower_better,0.0
+TIP4P,"Allosteric path length
+(shorter = stronger coupling)",0.6457,lower_better,0.698
