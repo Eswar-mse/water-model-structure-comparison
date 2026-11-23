@@ -6,7 +6,7 @@
 
 > **Status:** Figure-led results story. The figures describe these trajectories; they do not yet establish a general ranking of water models. Simulation input files, analysis scripts and independent replicate information are not present in this folder.
 
-**Explore:** [Domain motion](#2-the-solvent-and-starting-structure-jointly-shape-domain-opening) · [Conformational landscapes](#3-the-sampled-conformational-landscapes-differ) · [Hydration context](#4-solvent-facing-readouts-suggest-possible-mechanisms) · [Evidence and limits](docs/EVIDENCE_AND_LIMITS.md)
+**Explore:** [Domain motion](#2-the-solvent-and-starting-structure-jointly-shape-domain-opening) · [Conformational landscapes](#3-the-sampled-conformational-landscapes-differ) · [Hydration context](#4-hydration-and-correlated-motion) · [Evidence and limits](docs/EVIDENCE_AND_LIMITS.md)
 
 ## The question
 
@@ -34,27 +34,27 @@ LID–core and NMP–core distances do not shift in one uniform direction. For e
 
 ### 3. The sampled conformational landscapes differ
 
-The two-dimensional LID/NMP maps show distinct occupied regions across the eight conditions. A Jensen–Shannon divergence analysis of the same domain coordinates gives lower crystal-versus-predicted divergence for TIP3P than for the other three water models in this dataset. This is a **within-dataset comparison**, not evidence that TIP3P is generally the most accurate model. The existing bootstrap intervals need review because trajectory frames are correlated.
+The LID/NMP distance maps put all eight trajectories on the same axes and density scale. The predicted-start runs with OPC, SPC/E and TIP4P visit an additional compact NMP region in these trajectories, while their crystal-start counterparts concentrate elsewhere. These maps count sampled frames; they are **not equilibrium free-energy landscapes**.
 
-![LID/NMP distance landscapes](figures/fig04c_pmf_all_grid.png)
+![Eight condition-matched domain-distance occupancy maps](figures/domain_landscapes.png)
 
-![Pairwise divergence of domain-coordinate distributions](figures/fig11_jsd_heatmap.png)
+**Figure 4.** LID–core versus NMP–core distance occupancy, with identical axis limits, bins and color scale. Recreate it with [`scripts/plot_domain_landscapes.py`](scripts/plot_domain_landscapes.py) using the included [`data/domain_distances.csv`](data/domain_distances.csv) and [`requirements.txt`](requirements.txt). The maps remain sensitive to finite sampling and early relaxation.
 
-**Figures 4–5.** Domain-coordinate landscape and pairwise Jensen–Shannon divergence. See [`docs/EVIDENCE_AND_LIMITS.md`](docs/EVIDENCE_AND_LIMITS.md) for interpretation and analysis cautions.
+An [exploratory Jensen–Shannon divergence heatmap](figures/fig11_jsd_heatmap.png) compares the same coordinates. Its uncertainty analysis needs review before treating model differences as robust. See the [evidence and limits guide](docs/EVIDENCE_AND_LIMITS.md).
 
-### 4. Solvent-facing readouts suggest possible mechanisms
+### 4. Hydration and correlated motion
 
-Water-bridge counts and domain-motion correlations vary by condition. They offer hypotheses about coupling between hydration and motion, but the present results do not prove that individual waters cause particular conformational changes.
+Water-bridge counts and domain-motion correlations vary by condition. They provide context for hypotheses about hydration and motion. Their association does not establish that individual waters drive particular conformational changes.
 
 ![Inter-domain bridge water counts](figures/fig26d_bridge_summary_bar.png)
 
 ![LID-NMP cross-domain correlation](figures/fig24c_lid_nmp_coupling_bar.png)
 
-**Figures 6–7.** Mean bridge-water counts and off-diagonal LID/NMP dynamic cross-correlation. Summaries: [`water_bridge_summary.csv`](tables/water_bridge_summary.csv), [`dccm_network_summary.csv`](tables/dccm_network_summary.csv). Definitions and cutoffs must be recovered before manuscript use.
+**Figures 5–6.** Mean bridge-water counts and off-diagonal LID/NMP dynamic cross-correlation. Summaries: [`water_bridge_summary.csv`](tables/water_bridge_summary.csv), [`dccm_network_summary.csv`](tables/dccm_network_summary.csv). Definitions and cutoffs must be recovered before manuscript use.
 
 ## What this dataset supports
 
-The strongest defensible conclusion is that **water model and initial structure jointly affect the domain conformations sampled in these eight 4AKE trajectories**. The differences are visible across distance traces, angle distributions, conformational maps, and hydration-related readouts. The data do not yet support a universal water-model ranking, experimental accuracy claim, or causal hydration mechanism.
+The strongest defensible conclusion is that **the sampled 4AKE domain motions vary across combinations of water model and starting structure**. Differences are visible across distance traces, angle distributions and condition-matched occupancy maps. The available trajectories alone cannot separate a reproducible water-model effect from run-to-run variation or initial-condition memory.
 
 ## Repository map
 
@@ -63,6 +63,7 @@ The strongest defensible conclusion is that **water model and initial structure 
 - [`docs/METHODS_TO_RECOVER.md`](docs/METHODS_TO_RECOVER.md): exact information needed for a reproducible preprint.
 - [`figures/`](figures/): selected visual-story panels. The local results folder contains additional exploratory figures.
 - [`tables/`](tables/): compact summary tables for the displayed comparisons.
+- [`data/domain_distances.csv`](data/domain_distances.csv) and [`scripts/plot_domain_landscapes.py`](scripts/plot_domain_landscapes.py): data and code for the featured occupancy map.
 
 ## Publication status
 

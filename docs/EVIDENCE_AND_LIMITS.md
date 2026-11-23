@@ -11,8 +11,8 @@ The audit lists eight protein trajectories: OPC, SPC/E, TIP3P and TIP4P, each wi
 | Early relaxation | `fig01e_rmsd_all_grid.png` | Domain-specific RMSD traces | Need fitting and reference definitions |
 | Domain movement | `fig03d_domain_distances_grid.png` | LID/core and NMP/core time series | One trajectory may not be representative |
 | Opening geometry | `fig25b_domain_angle_distributions.png` | Condition-dependent angle distributions | Angle atom selections need documentation |
-| Conformational landscape | `fig04c_pmf_all_grid.png` | Occupied LID/NMP coordinate regions | PMF construction and convergence need checking |
-| Distribution comparison | `fig11_jsd_heatmap.png` | Pairwise domain-coordinate JSD | Histogram/binning and frame dependence matter |
+| Conformational landscape | `domain_landscapes.png` | Occupied LID/NMP coordinate regions on matched axes | Counts frames; finite sampling and early relaxation matter |
+| Exploratory distribution comparison | `fig11_jsd_heatmap.png` | Pairwise domain-coordinate JSD | Histogram/binning and frame dependence matter |
 | Hydration context | `fig26d_bridge_summary_bar.png` | Inter-domain bridge-water counts | Bridge definition needs documentation |
 | Motion coupling | `fig24c_lid_nmp_coupling_bar.png` | LID/NMP DCCM block averages | Correlation is not causal coupling |
 

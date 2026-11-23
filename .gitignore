@@ -1,11 +1,18 @@
 # Curated GitHub package; keep the original analysis files locally.
 /*
 !/README.md
+!/requirements.txt
 !/.gitignore
 !/docs/
 !/assets/
+!/data/
+!/scripts/
 !/tables/
 !/figures/
+
+/data/*
+!/data/README.md
+!/data/domain_distances.csv
 
 /tables/*
 !/tables/rmsd_summary.csv
@@ -17,9 +24,9 @@
 !/tables/pca_explained_variance.csv
 
 /figures/*
+!/figures/domain_landscapes.png
 !/figures/fig01e_rmsd_all_grid.png
 !/figures/fig03d_domain_distances_grid.png
-!/figures/fig04c_pmf_all_grid.png
 !/figures/fig11_jsd_heatmap.png
 !/figures/fig24c_lid_nmp_coupling_bar.png
 !/figures/fig25b_domain_angle_distributions.png
