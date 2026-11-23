@@ -1,4 +1,4 @@
-# Water-model and starting-structure effects on 4AKE dynamics
+# Water models × starting structures: a protein-motion comparison
 
 ![4AKE in water: eight trajectories and mean NMP domain opening](assets/story-cover.svg)
 

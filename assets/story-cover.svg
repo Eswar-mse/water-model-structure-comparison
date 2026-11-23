@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
-  <title id="title">4AKE in water: a visual map of eight molecular dynamics trajectories</title>
+  <title id="title">Water models and starting structures: a visual comparison of protein motion</title>
   <desc id="desc">Four water models compared for crystal and predicted starting structures. A chart shows mean NMP to core distance in angstroms for each condition.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#091426"/><stop offset="1" stop-color="#152943"/></linearGradient>
@@ -12,11 +12,11 @@
   <path d="M0 483 Q210 415 397 503 T800 482 T1200 490" fill="none" stroke="#6dbbd9" opacity=".12" stroke-width="2"/>
   <g font-family="Inter, ui-sans-serif, system-ui, sans-serif">
     <rect x="58" y="54" width="178" height="30" rx="15" fill="#193c49" stroke="#3a7c82"/>
-    <text x="147" y="75" text-anchor="middle" fill="#8de6d2" font-size="13" font-weight="700" letter-spacing="1.8">4AKE · 8 TRAJECTORIES</text>
-    <text x="58" y="159" fill="#ffffff" font-size="53" font-weight="760" letter-spacing="-2">The protein moves.</text>
-    <text x="58" y="222" fill="#80e1c8" font-size="53" font-weight="760" letter-spacing="-2">The water matters.</text>
-    <text x="59" y="273" fill="#c0ccdb" font-size="19">A visual study of crystal- and predicted-start</text>
-    <text x="59" y="302" fill="#c0ccdb" font-size="19">adenylate kinase in four explicit-water models.</text>
+    <text x="147" y="75" text-anchor="middle" fill="#8de6d2" font-size="13" font-weight="700" letter-spacing="1.8">4 × 2 COMPARISON</text>
+    <text x="58" y="159" fill="#ffffff" font-size="51" font-weight="760" letter-spacing="-2">Change the water.</text>
+    <text x="58" y="222" fill="#80e1c8" font-size="51" font-weight="760" letter-spacing="-2">Change the start.</text>
+    <text x="59" y="273" fill="#c0ccdb" font-size="19">How do both choices shape the motions</text>
+    <text x="59" y="302" fill="#c0ccdb" font-size="19">sampled by a protein? A 4AKE case study.</text>
     <path d="M60 349 H486" stroke="url(#line)" stroke-width="2" opacity=".6"/>
     <text x="59" y="383" fill="#d6e7ef" font-size="16" font-weight="600">4 water models</text>
     <text x="59" y="412" fill="#9fb5c9" font-size="15">OPC · SPC/E · TIP3P · TIP4P</text>
