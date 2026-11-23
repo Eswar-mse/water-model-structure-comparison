@@ -133,3 +133,10 @@ The visual story stands on its own. If we later pursue a preprint, it should wai
 </div>
 
 ![](https://capsule-render.vercel.app/api?type=rect&height=4&color=0:000000,50:8b0000,100:000000)
+
+<div align="center">
+  
+<h3>Study Credits</h3>
+<a href="https://github.com/Eswar-mse">Moparti Sri Venkata Satya Sai Eswar</a> · <a href="https://github.com/biomaverik">Debojyoti Chatterjee</a> · <a href="https://github.com/Vivin-francis">Vivin Francis</a>
+</div>
+
